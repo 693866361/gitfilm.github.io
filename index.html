@@ -2,46 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>视频<video></title>
+    <title>音频<audio></title>
 </head>
 <body>
 <div>
-
-    <!--获取视频源代码进行操作-->
-    <!--全频设置:allowFullScreen="true"-->
-    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=i0042znd9iv"
-            allowFullScreen="true" width="800" height="600"></iframe>
-    <br>
-    <br>
-    <!--获取视频资源步骤-->
-    <img src="img/3.webp" alt="格式:webp,具备jpg,png,jif的所有优点,内存小">
-    <br>
-    点开分享
-    <br>
-    <br>
-    <!--获取链接地址,然后粘贴-->
-    <img src="img/4.webp" alt="格式:webp,具备jpg,png,jif的所有优点,内存小">
-    <br>
-    点击连接-粘贴出来的就是地址了
-    <br>
-    <br>
-
-    <!--video标签:向页面中引入一个外部视频文件-->
-    <!--controls属性:显示视频控制器-->
+    <!--audio标签:向页面中引入一个外部音频文件-->
+    <!--controls属性:显示音频控制器-->
     显示控制器:解决浏览器兼容问题
     <br>
-    <video controls autoplay>设置显示视频控制器
+    <audio controls>设置显示音频控制器
         <!--source标签:自动选用可播放的格式-->
         <!--embed标签:处理兼容的时候再找文档说明-->
-        <source src="video/1.webm">
-        <!--mp4格式兼容IE11-->
-        <source src="video/1.mp4">
-    </video>
+        <source src="audio/audio1.MP3">
+        <source src="audio/audio1.ogg">
+    </audio>
     <br>
     <br>
     显示控制器:不能解决浏览器兼容问题
     <br>
-    <video src="video/1.webm" controls>设置显示视频控制器</video>
+    <audio src="audio/audio1.MP3" controls>设置显示音频控制器</audio>
     <br>
     <br>
 
@@ -50,12 +29,12 @@
     <!--muted属性:静音播放-->
     自动播放
     <br>
-    <video src="video/1.webm" controls autoplay muted>设置自动播放:autoplay</video>
+    <audio src="audio/audio2.MP3" controls autoplay>设置自动播放:autoplay</audio>
     <br>
     <br>
     循环播放
     <br>
-    <video src="video/1.webm" controls loop>设置循环播放:loop</video>
+    <audio src="audio/audio2.MP3" controls loop>设置循环播放:loop</audio>
 
 </div>
 </body>
